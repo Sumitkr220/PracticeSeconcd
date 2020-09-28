@@ -13,10 +13,12 @@ namespace EmployeeWages
             int check = r.Next(1, 3);
             if (check == Full_Time)
             {
-                Console.WriteLine("Employee is present");
+                Emp_Hour = 8;
             }
             else
-                Console.WriteLine("Employee Wages is absent");
+                Emp_Hour = 0;
+            Emp_Wages = Emp_Hour * Emp_rate;
+            Console.WriteLine("Employee Wages: " + Emp_Wages);
         }
     }
 }
